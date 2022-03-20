@@ -38,49 +38,6 @@ function App() {
             <button>Add</button>
           </div>
         </div>
-        <div className="column">
-          <h3 className='title'>Trello todo</h3>
-          <ul className="list-todo">
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-          </ul>
-          <div className="todo-add">
-            <input placeholder='Filling todo' type="text" />
-            <button>Add</button>
-          </div>
-        </div>
-        <div className="column">
-          <h3 className='title'>Trello todo</h3>
-          <ul className="list-todo">
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-          </ul>
-          <div className="todo-add">
-            <input placeholder='Filling todo' type="text" />
-            <button>Add</button>
-          </div>
-        </div>
-        <div className="column">
-          <h3 className='title'>Trello todo</h3>
-          <ul className="list-todo">
-            <li className="item">your todo</li>
-            <li className="item">your todo</li>
-          </ul>
-          <div className="todo-add">
-            <input placeholder='Filling todo' type="text" />
-            <button>Add</button>
-          </div>
-        </div>
       </div>
     </div>
   );
