@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+@import '_setting.scss';
 
 * {
   margin: 0;
@@ -16,136 +16,10 @@ body {
   color: black;
 }
 
-// khai bao bien
-$board-bg-color:  #0079bf;
-$appbar-bg-color: #0569a3;
-$gap: 10px;
-
 .trello {
   height: 100vh;
   display: grid;
   grid-template-rows: 40px 50px 1fr;
   background-color: $board-bg-color;
 
-  .navbar {
-    padding-left: $gap;
-    display: flex;
-    align-items: center;
-    &.app {
-      background-color: $appbar-bg-color;
-      font-size: 1.5rem;
-    }
-    &.board {
-      background-color: $board-bg-color;
-    }
-  }
-  .board-columns {
-    display: flex;
-    margin: 0 $gap $gap;
-    padding: 0 $gap;
-    column-gap: 4*$gap;
-    overflow-x: auto;
-    &::-webkit-scrollbar {
-      -webkit-appearance: none;
-    }
-    &::-webkit-scrollbar:horizontal {
-      height: 10px;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 6px;
-    }
-
-    .column {
-      user-select: none;
-      flex-basis: 25%;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      max-height: 60vh;
-      background-color: #eee;
-      padding: 0 2*$gap;
-      border-radius: 8px;
-      @media screen and (max-width: 1200px) {
-        flex-basis: 33.3333%;
-      }
-      @media screen and (max-width: 768px) {
-        flex-basis: 50%;
-      }
-      .title {
-        font-size: 1.8rem;
-        padding: 2*$gap 0;
-        flex-shrink: 0;
-        word-break: break-all;
-      }
-      .list-todo {
-        flex: 1;
-        border-radius: 8px;
-        overflow: hidden;
-        background-color: #fff;
-        padding: $gap;
-        overflow-y: auto;
-        &::-webkit-scrollbar {
-          width: 6px;
-        }
-        &::-webkit-scrollbar-track {
-          background-color: #fff;
-        }
-        &::-webkit-scrollbar-thumb {
-          background-color: #ccc;
-          border-radius: 6px;
-        }
-        .item {
-          padding: $gap;
-          cursor: pointer;
-          border-radius: 6px;
-          background-color: #eee;
-          display: flex;
-          flex-direction: column;
-          row-gap: $gap;
-          &:not(:last-of-type) {
-            margin-bottom: $gap;
-          }
-          .img {
-            display: block;
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 6px;
-          }
-          
-          &:hover {
-            background-color: #eee;
-          }
-        }
-      }
-      .todo-add {
-        margin-top: auto;
-        padding: 2*$gap 0;
-        display: flex;
-        padding-left: $gap;
-        input {
-          flex: 1;
-          outline: none;
-          border: 1px solid #ccc;
-          border-radius: 6px;
-          padding: 6px;
-        }
-        button {
-          outline: none;
-          border: none;
-          padding: 5px 10px;
-          background-color: $board-bg-color;
-          border-radius: 6px;
-          color: #fff;
-          margin-left: $gap;
-          cursor: pointer;
-        }
-      }
-    }
-  }
 }

@@ -1,0 +1,23 @@
+@import '_setting.scss';
+
+  .board-columns {
+    display: flex;
+    margin: 0 $gap $gap;
+    padding: 0 $gap;
+    column-gap: 4*$gap;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+    }
+
+  }
