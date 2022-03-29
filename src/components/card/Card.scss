@@ -2,15 +2,16 @@
 
 .item {
     padding: $gap;
-    cursor: pointer;
+    cursor: move;
     border-radius: 6px;
     background-color: #eee;
     display: flex;
     flex-direction: column;
     row-gap: $gap;
-    &:not(:last-of-type) {
+    &:not(:last-child) {
       margin-bottom: $gap;
     }
+    margin-bottom: $gap;
     .img {
       display: block;
       width: 100%;

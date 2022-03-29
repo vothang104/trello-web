@@ -6,6 +6,7 @@ import Column from 'components/column/Column'
 import { isEmpty } from 'lodash'
 import { v4 } from 'uuid'
 import { mapOrder } from 'util/sort'
+import { Container, Draggable } from 'react-smooth-dnd'
 
 function BoardContent() {
   const [boards, setBoards] = useState({})
@@ -22,18 +23,36 @@ function BoardContent() {
     }
   }, [])
   if(isEmpty(boards)) return <div className='not-found'>Board not found</div>
+
+  const onColumnDrop = (dropResult) => {
+    console.log(dropResult);
+  }
   
   return (
     <div className="board-columns">
+    <Container
+    orientation='horizontal'
+    onDrop={onColumnDrop}
+    dragHandleSelector=".column-drag-handle"
+    getChildPayload={index => columns[index]}
+    dropPlaceholder={{
+      animationDuration: 150,
+      showOnTop: true,
+      className: 'cards-drop-preview'
+    }}
+    >
       {
         columns && columns.length > 0 &&
         columns.map(column =>(
-        <Column
-        column={column}
-        key={v4()}></Column>
+        <Draggable key={v4()}>
+          <Column
+          column={column}
+          ></Column>
+        </Draggable>
           )
         )
       }
+    </Container>
     </div>
   )
 }
