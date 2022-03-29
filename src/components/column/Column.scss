@@ -10,7 +10,8 @@
     max-height: 60vh;
     background-color: #eee;
     padding: 0 2*$gap;
-    border-radius: 8px;
+    margin-right: 20px;
+    border-radius: 6px;
     @media screen and (max-width: 1200px) {
       flex-basis: 33.3333%;
     }
@@ -22,6 +23,7 @@
       padding: 2*$gap 0;
       flex-shrink: 0;
       word-break: break-all;
+      cursor: move;
     }
     .list-todo {
       flex: 1;
