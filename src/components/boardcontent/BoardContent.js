@@ -7,6 +7,7 @@ import { isEmpty } from 'lodash'
 import { v4 } from 'uuid'
 import { mapOrder } from 'util/sort'
 import { Container, Draggable } from 'react-smooth-dnd'
+import { Container as BootstrapContainer, Col, Row } from 'react-bootstrap'
 
 function BoardContent() {
   const [boards, setBoards] = useState({})
