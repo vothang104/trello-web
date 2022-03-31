@@ -5,14 +5,12 @@ import { v4 } from 'uuid';
 import './Column.scss'
 import { Container, Draggable } from 'react-smooth-dnd'
 
-function Column({ column }) {
+function Column({ column, onCardDrop }) {
   const cards = column.cards;
   if(cards) {
     mapOrder(cards, column.cardOrder, 'id')
   }
-  const onColumnDrop = (dropResult) => {
-    console.log('Card drop ~ ', dropResult);
-  }
+  
   return (
     <div className="column">
       <h3 className='title column-drag-handle'>{column.title}</h3>
@@ -20,7 +18,7 @@ function Column({ column }) {
       <Container
       orientation='vertical'
       groupName='column'
-      onDrop={onColumnDrop}
+      onDrop={dropResult => onCardDrop(column.id, dropResult)}
       dragHandleSelector=".card-drag-handle"
       getChildPayload={index => cards[index]}
       dropPlaceholder={{
