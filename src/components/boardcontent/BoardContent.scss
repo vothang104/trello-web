@@ -4,7 +4,7 @@
     display: flex;
     margin: 0 $gap $gap;
     padding: 0 $gap;
-    column-gap: 4*$gap;
+    column-gap: $gap;
     overflow-x: auto;
     &::-webkit-scrollbar {
       -webkit-appearance: none;

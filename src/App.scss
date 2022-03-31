@@ -1,4 +1,7 @@
 @import '_setting.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
