@@ -26,9 +26,9 @@ export const initialData = {
                     title: 'Inprogress',
                     cardOrder: ['card-8', 'card-9', 'card-10'],
                     cards: [
-                        {id: 'card-8',boardId: 'board-1',columnId: 'column-1', title: 'Title card 8', cover: null },
-                        {id: 'card-9',boardId: 'board-1',columnId: 'column-1', title: 'Title card 9', cover: null },
-                        {id: 'card-10',boardId: 'board-1',columnId: 'column-1', title: 'Title card 10', cover: null },
+                        {id: 'card-8',boardId: 'board-1',columnId: 'column-2', title: 'Title card 8', cover: null },
+                        {id: 'card-9',boardId: 'board-1',columnId: 'column-2', title: 'Title card 9', cover: null },
+                        {id: 'card-10',boardId: 'board-1',columnId: 'column-2', title: 'Title card 10', cover: null },
                     ]
                 },
                 {
@@ -37,9 +37,9 @@ export const initialData = {
                     title: 'Done',
                     cardOrder: ['card-12', 'card-13', 'card-11'],
                     cards: [
-                        {id: 'card-11',boardId: 'board-1',columnId: 'column-1', title: 'Title card 11', cover: null },
-                        {id: 'card-12',boardId: 'board-1',columnId: 'column-1', title: 'Title card 12', cover: null },
-                        {id: 'card-13',boardId: 'board-1',columnId: 'column-1', title: 'Title card 13', cover: null },
+                        {id: 'card-11',boardId: 'board-1',columnId: 'column-3', title: 'Title card 11', cover: null },
+                        {id: 'card-12',boardId: 'board-1',columnId: 'column-3', title: 'Title card 12', cover: null },
+                        {id: 'card-13',boardId: 'board-1',columnId: 'column-3', title: 'Title card 13', cover: null },
                     ]
                 }
             ]
