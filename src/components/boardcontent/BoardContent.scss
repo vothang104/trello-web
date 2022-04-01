@@ -6,6 +6,9 @@
     padding: 0 $gap;
     column-gap: $gap;
     overflow-x: auto;
+    .smooth-dnd-container {
+      flex-basis: 75%;
+    }
     &::-webkit-scrollbar {
       -webkit-appearance: none;
     }
